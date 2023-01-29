@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class Ticket {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  private Integer id;
+  private Long id;
 
   private String title;
   private String description;
