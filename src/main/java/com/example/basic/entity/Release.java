@@ -20,8 +20,7 @@ public class Release {
   public Release() {
   }
 
-  public Release(Integer id, String description, String releaseDate) {
-    this.id = id;
+  public Release(String description, String releaseDate) {
     this.releaseDate = releaseDate;
     this.description = description;
   }
