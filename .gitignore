@@ -35,6 +35,9 @@ hs_err_pid*
 # Mac
 .DS_Store
 
+#VSCode
+.vscode
+
 # Maven
 log/
 target/
