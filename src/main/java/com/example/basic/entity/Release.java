@@ -13,15 +13,14 @@ import javax.persistence.*;
 public class Release {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  private Integer id;
+  private Long id;
   private String releaseDate;
   private String description;
 
   public Release() {
   }
 
-  public Release(Integer id, String description, String releaseDate) {
-    this.id = id;
+  public Release(String description, String releaseDate) {
     this.releaseDate = releaseDate;
     this.description = description;
   }
