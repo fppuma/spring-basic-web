@@ -23,10 +23,11 @@ public class ApplicationServiceImpl implements ApplicationService{
     public Application findApplication(Long id) {
         Optional<Application> optionalApplication = applicationRepository.findById(id);
 
-        if(optionalApplication.isPresent())
+        if(optionalApplication.isPresent()) {
             return optionalApplication.get();
-        else
+        } else {
             throw new ApplicationNotFoundException("Application Not Found");
+        }
     }
 
 
